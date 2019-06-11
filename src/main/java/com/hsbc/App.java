@@ -1,5 +1,7 @@
 package com.hsbc;
 
+import java.util.List;
+
 /**
  * Hello world!
  *
@@ -8,14 +10,20 @@ public class App
 {
     public static void main( String[] args )
     {
-        int count = 100;
-        NumberConvertor convertor = new NumberConvertor();
-        for (int i = 1; i <= count; i++) {
-            System.out.println(convertor.getZZByNum(i));
-        }
+        int[] a={2,3};
+        List<String> result = DigitTranslator.convertToStr(a);
+        System.out.println(result);
 
-        for (int i = 1; i <= count; i++) {
-            System.out.println(convertor.getMoreZZByNum(i));
-        }
+        int[] b={9};
+        result = DigitTranslator.convertToStr(b);
+        System.out.println(result);
+
+        int[] c={23};
+        result = DigitTranslator.convertToStr(c);
+        System.out.println(result);
+
+        int[] d={23,1,0,4};
+        result = DigitTranslator.convertToStr(d);
+        System.out.println(result);
     }
 }
